@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(161, 220, 227);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .content .head{
+            color: rgb(65, 95, 121);
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom:5px ;
+        }
+        .subhead{
+            color: rgb(65, 95, 121);
+            margin:0;
+            margin-bottom:5px ;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .items, .time-place {
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            background-color: rgb(180, 237, 243);
+            width:300px;
+            border-radius: 20px;
+            margin:15px 0;
+            padding: 10px;
+            align-items: center;
+            text-align: center; /* Ensure everything inside is centered */
+        }
+        .items ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .items li{
+            text-align: left; /* Center the list items */
+            font-size: large;
+        }
+        .location p{
+            font-size: 1.2rem;
+        }
+        img{
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        button a{
+            text-decoration: none;
+            color: aliceblue;  
+            padding:1px 20px;          
+        }
+        button{
+            background-color: rgb(75, 145, 152);
+            border: none;
+            border-radius: 5px;
+            padding:5px 20px;
+            cursor: pointer;     
+        }
+        button:hover{
+            background-color: rgb(54, 96, 101);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <p class="head">Its my Birthday</p>
+            <p class="subhead">On November 19th</p>
+
+            <div class="items"> 
+                <div class="bringlist">
+                    <p class="bring">What to bring:</p>
+                    <ul class="list">
+                        <li>balloons</li>
+                        <li>Cake</li>
+                        <li>chocolate</li>
+                    </ul>
+                </div>              
+            </div> 
+
+            <div class="time-place">
+                <p>Time: 12:00 pm</p>
+                <p>Place: Valapad, Thrissur</p>
+            </div>
+
+            <img class="cake" src="https://raw.githubusercontent.com/appbrewery/webdev/main/birthday-cake3.4.jpeg" alt="Birthday cake image"/>
+        </div>
+
+        <div class="location">
+            <p>This is where you need to go:</p>
+            <button>
+                <a href="https://www.google.com/maps/@10.5120875,76.2568763,3a,75y,199.98h,90t/data=!3m7!1e1!3m5!1szt2Ev64Mc1dziPwX2ja0UA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3Dzt2Ev64Mc1dziPwX2ja0UA%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D199.98105%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656?coh=205409&entry=ttu">location</a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

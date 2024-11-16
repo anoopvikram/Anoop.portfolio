@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: "Roboto Condensed", sans-serif;
+        background-color: rgb(121, 131, 93);
+    }
+    .container{
+        display:flex;
+        gap:20px;
+
+    }
+    .h1{
+        font-size: 4rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        margin-bottom: 0%;
+    }
+    .h2{
+        color:rgb(175, 190, 134);
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+    }
+    .movie{
+        background-color: rgb(186, 204, 139);
+        min-width: 450px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .movie:hover{
+        background-color: rgb(213, 226, 182);
+    }
+    .mhead{
+        font-size: 2rem;
+        font-weight: bold;
+        margin:10px;
+    }
+    .desc{
+        font-size: larger;
+        text-align: left;
+        margin:15px
+    }
+    img{
+        border-bottom-left-radius: 100px ;
+        border-bottom-right-radius: 10px ;
+    }
+    @media(max-width:600px){
+        .container{
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+        }
+        .h1{
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0%;
+        text-align: center;
+        } 
+        .h2{
+        color:rgb(186, 204, 139);
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        text-align: center;
+        }  
+    }
+</style>
+</head>
+<body>
+    <div class="head">
+        <p class="h1">Best movies according to me.</p>
+        <p class="h2">My top 3 movies of all time.</p>
+    </div>
+    <div class="container">
+        <div class="movie">
+            <p class="mhead">Inception</p>
+            <a href="https://www.imdb.com/title/tt1375666/"><img src="./inception.jpeg" width="300"/></a>
+            <p class="desc">A skilled thief, who steals secrets by entering people's dreams, is given a chance to erase his criminal record. He must plant an idea into a target's subconscious, but complications arise as dreams within dreams blur reality.
+            </p>
+        </div>
+        <div class="movie">
+            <p class="mhead">The Dark Knight</p>
+            <a href="https://www.imdb.com/title/tt0468569/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_dark%2520kn"><img src="./dark knight.jpeg" width="300" height="300"/></a>
+            <p class="desc">Batman faces his greatest psychological challenge when the Joker emerges as a new threat to Gotham. With chaos and moral dilemmas, Batman must confront his own values to save the city from descending into anarchy.  
+            </p>
+        </div>
+        <div class="movie">
+            <p class="mhead">The Shawshank Redemption</p> 
+            <a href="https://www.imdb.com/title/tt0111161/"><img src="./shaw.jpeg" width="300"/></a>
+            <p class="desc">Wrongly convicted banker Andy Dufresne forms a bond with fellow inmate Red. Over decades, they find solace and redemption through acts of common decency. Andy's hope and resilience lead to an unexpected, liberating conclusion.
+            </p>  
+        </div>        
+    </div>
+    
+</body>
+</html>
+
