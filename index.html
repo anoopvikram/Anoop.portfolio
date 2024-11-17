@@ -7,63 +7,44 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">    
-</head> 
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Text:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech&family=Yusei+Magic&display=swap" rel="stylesheet">    
+
 <body>
-    <section id="home">
-        <div class="container mainhome">
-            <div class="nav">
-                <div class="home item"><button class="butn"><a class="btxt" href="#home">Home</a></button></div>
-                <div class="intro item"><button class="butn"><a class="btxt" href="#intro">Intro</a></button></div>
-                <div class="skills item"><button class="butn"><a class="btxt" href="#skills">Skills</a></button></div>
-                <div class="projects item"><button class="butn"><a class="btxt" href="#works">Projects</a></button></div>
-                <div class="contact1 item2"><button class="conbutn butn"><a class="con btxt" href="#contact">Contact Me</a></button></div>
+    <header id="home">
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#intro">Intro</a></li>
+                    <li><a class="nav-link" href="#works">Projects</a></li>
+                    <li><a class="nav-link" href="#contact">Contact Me</a></li>
+                </ul>
             </div>
-            
-            <div class="heading">
-                <p class="name">Anoop Vikram</p>
-                <p class="dec">A Web Developer.</p>
-            </div>
-            <div class="wave"><img src="./image/wave.png" width="100%"></div>
-            <div class="cloud"><img src="./image/cloud.png" width="195px" height="110"/></div>    
+        </nav>
+    </header>
+    <section id="main">
+        <div class="main">
+            <p class="head">Anoop<br> Vikram</p>
+            <p class="subhead">Designer and <span>Developer.</span></p>
         </div>
     </section>
-    <section id="intro">
-        <div class="intr">
+    <section id="intro" class="shared">
+        <div class="background"></div> 
+        <div class="wal intr">
             <img class="propic" src="./image/profilepic.jpg" width="300px">
             <p class="inthead">Hi Guys,</p>
-            <p class="intdec">I'm an engineering student, with a passion for <span>web development</span>. I’ve a love for <span>creating</span> and <span>problem-solving</span>, which naturally led me to explore the world of web development.</p>
+            <p class="intdec">
+                I'm an engineering student, with a passion for 
+                <span>web development</span>. I’ve a love for 
+                <span>creating</span> and <span>problem-solving</span>, 
+                which naturally led me to explore the world of web development.
+            </p>
         </div>
-    </section>   
-    <section id="skills">
-        <div class="ski">
-        <div class="skillset">
-                <div class="design">
-                    <img src="./image/designtools.png">
-                    <p class="designhead light">Designer</p>
-                    <p class="designpara dark">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-                    <p class="designtools light">Design Tools:</p>
-                    <ul class="dark">
-                        <li>Figma</li>
-                        <li>Canva</li>
-                        <li>Pen and Paper</li>
-                    </ul>
-                </div>
-                <div class="design">
-                    <img src="./image/devtools.png">
-                    <p class="designhead light">Frontend Developer</p>
-                    <p class="designpara dark">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                    <p class="designtools light">Dev Tools:</p>
-                    <ul class="dark">
-                        <li>VS Code</li>
-                        <li>Github</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
-        </div>
-    </div>
     </section>
-    <section id="works">
+    
+       
+    
+    <section id="works" class="shared">
         <div class="works">
             <p class="workshead">My Recent Work.</p>
             <p class="workspara">Here are a few past design projects I've worked on.</p>
@@ -83,11 +64,14 @@
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="shared">
         <div class="contact">
             <p class="inthead conhead light con">Get In Touch.</p>
             <p class="intdec condec light con">Ready to <span>team up</span>? Let’s set up a <span>time to chat</span>—I’ll bring the <span>coffee.</span></p>
-            <button class="CMB">Contact Me</button>
+            <a href="./contact.html">
+                <button class="CMB">Contact Me</button>
+            </a>
+            
         </div>
     </section>
     <section id="footer">
@@ -100,5 +84,6 @@
             <div class="company">© Anoop Vikram</div>
         </div>
     </section>
+    <script src="index.js"></script>
 </body>         
 </html>
