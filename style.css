@@ -60,10 +60,20 @@ body {
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 .main {
-    position: absolute;
-    right: 15%;
-    bottom: 18%;
+    position: relative; /* Changed from absolute to relative */
+    right: -25%; /* Adjust margins instead of positioning */
     text-align: center;
+    margin: 10% auto; /* Center the section */
+}
+
+@media (max-width:560px){
+    .main {
+        position: relative; /* Changed from absolute to relative */
+        right: auto; /* Remove any specific alignment unless necessary */
+        bottom: auto; /* Adjust margins instead of positioning */
+        text-align: center;
+        margin: 10% auto; /* Center the section */
+    }
 }
 
 .head{
@@ -81,8 +91,11 @@ body {
     font-weight: 100;
 }
 .subhead span{
-    color: #5a66d0;
     font-weight: 700;
+    display: inline-block;
+}
+.devn{
+    color: #5a66d0;
 }
 
 /* Intro Section */
@@ -285,7 +298,6 @@ body {
     font-size: 14px;
     padding-top: 50px;
 }
-
 span{
-    font-weight: 800;
+    font-weight:800;
 }
